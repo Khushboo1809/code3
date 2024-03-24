@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter & Search</title>
+    <link rel="stylesheet" href="PFilter.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="SearchContainer">
+            <input type="search" id="SearchInput" placeholder="Search Product name here..">
+            <button id="search">Search</button>
+        </div>    
+        <div id="buttons">
+            <button class="btnGroup" onclick="filterProduct('All')">All</button>
+            <button class="btnGroup" onclick="filterProduct('Topwear')">Topwear</button>
+            <button class="btnGroup" onclick="filterProduct('Bottomwear')">Bottomwear</button>
+            <button class="btnGroup" onclick="filterProduct('Jacket')">Jacket</button>
+            <button class="btnGroup" onclick="filterProduct('Watch')">Watch</button>
+        </div>
+        <div id="products">
+
+        </div>
+    </div>
+    <script src="PFilter.js"></script>
+</body>
+</html>
